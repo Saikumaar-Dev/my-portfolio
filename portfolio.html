@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saikumar Jatavath — Frontend Developer</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    
+</head>
+
+<body>
+
+    <!-- ░░ CURSOR ░░ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- ░░ LOADER ░░ -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <span class="loader-name">Loading Please Wait...</span>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ░░ NAVBAR ░░ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">SAI<span class="dot">.</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon sun">☀</span>
+                    <span class="theme-icon moon">◐</span>
+                </button>
+                <a href="#" class="btn-resume" id="resumeBtn">Resume ↗</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#" class="mobile-link resume-mobile">Download Resume ↗</a>
+        </div>
+    </header>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name reveal">
+                <span class="name-line">Saikumar</span>
+                <span class="name-line accent-outline">Jatavath</span>
+            </h1>
+            <p class="hero-role reveal">
+                <span class="role-prefix">—</span>
+                <span id="typewriter"></span><span class="cursor-blink">|</span>
+            </p>
+            <p class="hero-intro reveal">
+                Building elegant digital experiences with clean code and thoughtful design.
+                Passionate about turning ideas into pixel-perfect, performant web applications.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-num" data-count="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="1">0</span><span class="stat-suffix">yr</span>
+                    <span class="stat-label">Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ░░ ABOUT ░░ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-label reveal">01 / About</div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2 class="section-title">Crafting the web,<br><em>one line at a time.</em></h2>
+                    <p>Hi, I'm Saikumar — a Frontend Developer from Hyderabad, India with a passion for building clean, fast, and responsive web applications. I specialize in the React ecosystem, bringing modern UI patterns and best practices to every project.</p>
+                    <p>I enjoy the intersection of engineering and design — where functionality meets aesthetics. Whether it's a pixel-perfect landing page or a complex dashboard, I care deeply about the craft.</p>
+                    <p>When I'm not coding, I'm exploring new web technologies, contributing to projects, and continuously sharpening my skills.</p>
+                    <div class="about-links">
+                        <a href="https://www.linkedin.com/in/jatavath-saikumar-9a1117325" target="_blank" class="about-social">LinkedIn ↗</a>
+                        <a href="https://saikumarjat.ccbp.tech/" target="_blank" class="about-social">Portfolio ↗</a>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="avatar-frame">
+                        <div class="avatar-inner">
+                            <div class="avatar-initials">SAI</div>
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-ring ring-2"></div>
+                        </div>
+                    </div>
+                    <div class="about-card glass">
+                        <div class="card-row"><span class="card-key">Location</span><span class="card-val">Hyderabad, IN 🇮🇳</span></div>
+                        <div class="card-row"><span class="card-key">Role</span><span class="card-val">Frontend Developer</span></div>
+                        <div class="card-row"><span class="card-key">Focus</span><span class="card-val">React · UI/UX · Performance</span></div>
+                        <div class="card-row"><span class="card-key">Status</span><span class="card-val open">Open to Work</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░ SKILLS ░░ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-label reveal">02 / Skills</div>
+            <h2 class="section-title reveal">Technologies &<br>Tools I Use</h2>
+            <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ░░ PROJECTS ░░ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-label reveal">03 / Projects</div>
+            <h2 class="section-title reveal">Selected Work</h2>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ░░ EXPERIENCE / EDUCATION ░░ -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-label reveal">04 / Journey</div>
+            <h2 class="section-title reveal">Experience &<br>Education</h2>
+            <div class="timeline" id="timeline"></div>
+        </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-label reveal">05 / Contact</div>
+            <div class="contact-grid">
+                <div class="contact-left reveal">
+                    <h2 class="section-title">Let's Build<br>Something<br><em>Together.</em></h2>
+                    <p class="contact-sub">Have a project in mind or want to chat? I'm always open to discussing new opportunities and interesting ideas.</p>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/jatavath-saikumar-9a1117325" target="_blank" class="social-chip">
+                            <span class="social-icon">in</span> LinkedIn
+                        </a>
+                        <a href="https://saikumarjat.ccbp.tech/" target="_blank" class="social-chip">
+                            <span class="social-icon">◈</span> Portfolio
+                        </a>
+                        <a href="mailto:saikumar@example.com" class="social-chip">
+                            <span class="social-icon">@</span> Email
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-right reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="nameInput" class="form-input" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="nameInput">Your Name</label>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="emailInput" class="form-input" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="emailInput">Email Address</label>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subjectInput" class="form-input" placeholder=" " autocomplete="off" />
+                            <label class="form-label" for="subjectInput">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="messageInput" class="form-input form-textarea" placeholder=" " rows="5"></textarea>
+                            <label class="form-label" for="messageInput">Message</label>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            ✓ Message sent! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">SK<span class="dot">.</span></span>
+                <span class="footer-copy">© 2025 Saikumar Jatavath. Crafted with passion.</span>
+                <a href="#hero" class="back-top">↑ Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
