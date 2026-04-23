@@ -156,7 +156,7 @@ window.addEventListener('load', () => {
         document.body.style.overflow = '';
         initReveal();
         initCounters();
-    }, 1600);
+    }, 800);
     document.body.style.overflow = 'hidden';
 });
 
