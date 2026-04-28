@@ -486,12 +486,14 @@ contactForm.addEventListener('submit', function(e) {
 });
 
 /* ── RESUME DOWNLOAD ─────────────────────── */
+const resumeBtn = document.getElementById('resumeBtn');
 
-document.getElementById('resumeBtn').addEventListener('click', (e) => {
-    e.preventDefault();
-    // Replace with actual resume PDF path
-    alert('Resume download — please add your resume PDF as "resume.pdf" to the project folder and update this link!');
-});
+if (resumeBtn) {
+    resumeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Resume download...');
+    });
+}
 
 /* ── SMOOTH SCROLL ───────────────────────── */
 
